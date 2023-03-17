@@ -1,0 +1,19 @@
+
+
+.expenses{
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+   max-width:95%;
+   width:50rem;
+    color: white;
+    background-color:rgb(31, 31, 31);
+    border-radius: 12px;
+    padding:1rem 0.5rem;
+  
+    box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+} 
+
+
+
