@@ -1,9 +1,10 @@
-.Expenses-content{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    
-   
-
+.Expenses-content {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.Expense-List {
+  padding-left: 0px;
+  list-style: none;
 }

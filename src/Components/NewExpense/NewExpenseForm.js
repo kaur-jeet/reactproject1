@@ -19,7 +19,7 @@ const NewExpenseForm = (props) => {
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      // ehnu date object bnayegi te fr e getFullYear function lggu, oh puraneya items te lgi janda hi new te fail hon dya hi
+
       date: new Date(enteredDate),
     };
     console.log("expenseData", expenseData);
