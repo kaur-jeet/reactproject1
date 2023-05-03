@@ -1,6 +1,7 @@
 import React from "react";
-import ExpenseItems from "./ExpenseItems";
+import ExpenseItems from "../ExpenseItems";
 import "./ExpensesList.css";
+
 const ExpensesList = (props) => {
   if (props.items.length === 0) {
     return <h2 className="Expenses-content">Found no expenses.</h2>;

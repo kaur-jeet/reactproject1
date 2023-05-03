@@ -1,5 +1,6 @@
 import React from "react";
 import "./ChartBar.css";
+
 const ChartBar = (props) => {
   let barHeight = "0%";
   if (props.maxValue > 0) {

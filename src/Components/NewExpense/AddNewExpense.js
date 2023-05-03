@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import NewExpenseForm from "./NewExpenseForm";
 import "./AddNewExpense.css";
+
 const AddNewExpense = (props) => {
   const [newItem, setNewItem] = useState(false);
+
   const SaveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
+
     console.log(expenseData);
     props.onAddExpense(expenseData);
   };
+
   const AddNewExpenseHandler = () => {
     setNewItem(true);
   };
+
   const CancelHandler = () => {
     setNewItem(false);
   };

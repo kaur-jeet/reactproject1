@@ -1,9 +1,6 @@
-.main{
-    
-  background-color: rgb(60, 59, 59);
-
-display: flex;
+.main {
+  display: flex;
   align-items: center;
   justify-content: center;
-flex-direction: column;
+  flex-direction: column;
 }

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./NewExpenseForm.css";
+
 const NewExpenseForm = (props) => {
-  const [enteredTitle, setenteredTitle] = useState(" ");
-  const [enteredAmount, setenteredAmount] = useState(" ");
-  const [enteredDate, setenteredDate] = useState(" ");
+  const [enteredTitle, setenteredTitle] = useState("");
+  const [enteredAmount, setenteredAmount] = useState("");
+  const [enteredDate, setenteredDate] = useState("");
 
   const TitleChangeHandler = (event) => {
     setenteredTitle(event.target.value);
@@ -16,6 +17,14 @@ const NewExpenseForm = (props) => {
   };
   const FormSubmitHandler = (event) => {
     event.preventDefault();
+    if (
+      enteredTitle.length === 0 ||
+      enteredAmount.length === 0 ||
+      enteredDate.length === 0
+    ) {
+      alert("Please fill title, amount and date of expense.");
+      return;
+    }
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
